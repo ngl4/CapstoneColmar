@@ -10,6 +10,8 @@ body {
 
 	font-size: 18px;
 	overflow-x: hidden;
+	margin-left: 45px;
+	margin-right: 45px;
 
 }
 
@@ -118,7 +120,7 @@ body {
 .banner-container img {
 
 	width: 55%;
-	height: 500px;
+	height: 450px;
 	margin-top: 32px;
 	margin-bottom: 32px;
 }
@@ -136,7 +138,7 @@ body {
 
 .banner-head {
 
-	font-size: 40px;
+	font-size: 32px;
 	font-weight: bold;
 }
 
