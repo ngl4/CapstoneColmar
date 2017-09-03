@@ -1,0 +1,160 @@
+* {
+
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, 
+body {
+
+	font-size: 18px;
+	overflow-x: hidden;
+
+}
+
+
+/*header: Logo and Brandname*/
+#header {
+
+	background-color: white;
+	font-family: Helvetica;
+}
+
+.header-container {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 44px;
+	width: 100%;
+	margin: auto;
+}
+
+.logo-brandname {
+
+	margin-left: 24px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+
+}
+
+.logo img {
+
+	height: 32px;
+	width: auto;
+}
+
+.brandname {
+
+	height: 32px;
+	width: auto;
+	margin-top: 5px;
+}
+
+
+.brandname strong {
+
+	font-weight: bold;
+	color: gray;
+}
+
+.brandname a {
+
+	color: silver;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+/*Header: Menu*/
+
+.header-menu {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-right: 24px;
+	margin-top: 25px;
+
+}
+
+.online,
+.companies,
+.login {
+
+	margin-left: 16px;
+}
+
+.campus a, 
+.online a,
+.companies a,
+.login a {
+
+	color: black;
+	text-decoration: none;
+}
+
+
+
+/*Banner: Image*/
+
+#banner {
+
+	background-color: silver;
+}
+
+.banner-container {
+
+	margin: 32px 44px 32px 44px;
+	display: flex;
+	flex-direction: row;
+
+
+}
+
+.banner-container img {
+
+	width: 55%;
+	height: 500px;
+	margin-top: 32px;
+	margin-bottom: 32px;
+}
+
+.banner-info-container {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 64px;
+	font-family: sans-serif;
+	width: 26%;
+
+}
+
+.banner-head {
+
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.banner-p {
+
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.btn-start {
+
+	font-size: 20px;
+	background-color: gray;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: auto;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
