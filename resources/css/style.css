@@ -9,9 +9,9 @@ html,
 body {
 
 	font-size: 18px;
-	overflow-x: hidden;
-	margin-left: 45px;
-	margin-right: 45px;
+	overflow: visible;
+	margin-left: 40px;
+	margin-right: 40px;
 
 }
 
@@ -105,12 +105,12 @@ body {
 
 #banner {
 
-	background-color: silver;
+	background-color: #d8d8d8;
 }
 
 .banner-container {
 
-	margin: 32px 44px 32px 44px;
+	margin: 32px 24px auto 24px;
 	display: flex;
 	flex-direction: row;
 
@@ -165,31 +165,475 @@ body {
 
 /*Introduction Section*/
 
+#introduction {
+
+	background-color: #eff2f4;
+
+}
+
+.intro-container {
+
+	margin-left: 24px;
+	display: flex;
+	flex-direction: row;
 
 
+}
 
 
+		/*Left Container*/
 
+
+.intro-left-container {
+
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.intro-left-container img {
+
+	width: 100%;
+
+}
+
+.intro-left-text {
+
+	padding-top: 32px;
+}
+
+.intro-title {
+
+	padding-bottom: 24px;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.intro-left-text p {
+
+	font-size: 16px;
+
+}
+
+.intro-quote-source {
+
+	font-size: 8px;
+}
+
+
+		/*Right Container*/
+		/*ISSUE: I have a issue with making
+		more space in between the image and 
+		the text; I cannot use 
+		justify-content: space-between 
+		to seperate the image and the text. 
+		I do not know where do I type incorrectly*/
+
+
+.intro-right-container {
+
+	margin-left: 24px;
+	width: 60%;
+	border-left: 1px solid #afafaf;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.orientation-box {
+
+	display: flex;
+	flex-direction: row;
+	padding: 16px 16px 16px 16px;
+	height: 150px;
+}
+
+
+.our-campus-box {
+
+	display: flex;
+	flex-direction: row;
+	padding: 16px 16px 16px 16px;
+	height: 150px;
+
+}
+
+.guest-lecture-box {
+
+	display: flex;
+	flex-direction: row;
+	padding: 16px 16px 16px 16px;
+	height: 150px;
+}
+
+.orientation-box img {
+
+	width: 30%;
+	height: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+
+}
+
+.orientation-date {
+
+	width: 65%;
+}
+
+.our-campus-box img {
+
+	width: 30%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+
+.guest-lecture-box img {
+
+	width: 30%;
+	height: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+
+.orientation-box:hover,
+.our-campus-box:hover,
+.guest-lecture-box:hover {
+
+	background-color: gray;
+}
 
 
 /*Start Learning Section*/
 
+#learning-list {
+
+	background-color: #ededed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 32px 155px 32px 155px;
+}
+
+.learning-list-header {
+
+	display: flex;
+	justify-content: center;
+	padding-bottom: 32px;
+}
+
+.section-title {
+
+	font-size: 30px;
+	font-weight: bold;
+
+}/*same for thesis exhibits title*/
+
+.learning-list-container {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+	
+	/*learning list TOP container*/
+
+
+.learning-list-top {
+
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+.software-engineer img,
+.computer-art img,
+.design img {
+
+	width: 235px;
+	margin: auto;
+
+
+}
+
+.software-text {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: white;
+	width: 235px;
+}
+
+.computer-art {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 40px;
+
+}
+
+.computer-text {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: white;
+	width: 235px;
+}
+
+
+.design {
+
+	margin-left: 40px;
+}
+
+
+.design-text {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: white;
+	width: 235px;
+}
 
 
 
+	/*learning list BOTTOM container*/
+
+
+.learning-list-bottom {
+
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	margin-top: 32px;
+}
+
+.data img,
+.business img,
+.marketing img {
+
+	width: 235px;
+	margin: auto;
+
+
+}
+
+.data-text {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: white;
+	width: 235px;
+}
+
+.business {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 40px;
+
+}
+
+.business-text {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: white;
+	width: 235px;
+}
+
+
+.marketing {
+
+	margin-left: 40px;
+}
+
+
+.marketing-text {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: white;
+	width: 235px;
+}
 
 
 
 /*Thesis Exhibits Section*/
 
+#exhibits {
+
+	background-color: #eff2f4;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
 
 
+.exhibits-header {
 
+	display: flex;
+	justify-content: center;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+
+.exhibits-container {
+
+	margin-left: 24px;
+	display: flex;
+	flex-direction: row;
+
+
+}
+
+
+		/*Left Container*/
+
+
+.exhibits-left-container {
+
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	padding-top: 0px;
+	padding-bottom: 32px;
+}
+
+.exhibits-left-container video {
+
+	width: 100%;
+
+}
+
+.exhibits-left-text {
+
+	padding-top: 32px;
+}
+
+.exhibit-title {
+
+	padding-bottom: 24px;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.exhibit-left-text p {
+
+	font-size: 16px;
+
+}
+
+
+		/*Right Container*/
+		/*SAME ISSUE WITH THE RIGHT CONTAINER 
+		LIKE THE INTRODUCTION SECTION*/
+
+
+.exhibits-right-container {
+
+	margin-left: 24px;
+	width: 60%;
+	border-left: 1px solid #afafaf;
+	padding-top: 0px;
+	padding-bottom: 32px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.fisma-box {
+
+	display: flex;
+	flex-direction: row;
+	padding: 0px 16px 16px 16px;
+	height: 150px;
+}
+
+
+.now-then-box {
+
+	display: flex;
+	flex-direction: row;
+	padding: 16px 16px 16px 16px;
+	height: 150px;
+
+}
+
+.fisma-box img {
+
+	width: 30%;
+	height: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+
+}
+
+.fisma-text {
+
+	width: 65%;
+}
+
+.now-then-box img {
+
+	width: 30%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+
+.fisma-box:hover,
+.now-then-box:hover {
+
+	background-color: gray;
+}
 
 
 /*Footer*/
 
+footer {
 
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-left: 24px;
+	padding-top: 16px;
+	font-size: 15px;
+	height: 80px;
+	background-color: #eff2f4;
+	border-top: 0.5px solid #afafaf;
+}
+
+.footer-terms {
+
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-right: 24px;
+}
+
+.terms {
+
+	padding-right: 10px;
+}
 
 
 
