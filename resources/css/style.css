@@ -71,7 +71,7 @@ body {
 	text-decoration: none;
 }
 
-/*Header: Menu*/
+	/*Header: Menu*/
 
 .header-menu {
 
@@ -97,6 +97,18 @@ body {
 
 	color: black;
 	text-decoration: none;
+}
+
+
+
+	/*Header Mobile*/
+
+.logo-icon,
+.campus-icon,
+.online-icon,
+.login-icon {
+
+	display: none;
 }
 
 
@@ -638,3 +650,96 @@ footer {
 
 
 /*Media Query for Mobile Devices*/
+
+	/*Header: Logo Brand and Login*/
+
+@media only screen and (max-width: 470px) , (orientation: portrait) {
+
+	html,
+	body {
+
+		margin-left: 0px;
+		margin-right: 0px;
+		overflow-x: hidden;
+	}
+
+
+	/*Header*/
+
+	.header-container {
+
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		height: 64px;
+		width: 100%;
+		margin: 16px 24px 16px auto;
+	}
+
+	.logo-brandname {
+
+		display: none;
+	}
+
+
+	.logo-icon {
+
+		display: flex;
+		height: 32px;
+		width: auto;
+
+	}
+
+	.campus-icon {
+
+		display: flex;
+		height: 32px;
+		width: auto;
+
+	}
+
+	.online-icon {
+
+		display: flex;
+		height: 32px;
+		width: auto;
+	}	
+
+	.login-icon {
+
+		display: flex;
+		height: 32px;
+		width: auto;
+	}
+
+	.brandname {
+
+		display: none;
+	}
+
+
+	.header-menu {
+
+		display: none;
+
+	}
+
+
+
+
+	/*Banner*/
+
+
+	
+
+
+
+
+
+
+
+
+
+
+}
+
