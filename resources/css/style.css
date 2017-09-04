@@ -485,6 +485,14 @@ body {
 }
 
 
+.learning-list-icons {
+
+	display: none;
+}
+
+
+
+
 
 /*Thesis Exhibits Section*/
 
@@ -653,7 +661,7 @@ footer {
 
 	/*Header: Logo Brand and Login*/
 
-@media only screen and (max-width: 470px) , (orientation: portrait) {
+@media only screen and (max-width: 470px) , (orientation: portrait) , (min-resolution: 300dpi) {
 
 	html,
 	body {
@@ -671,9 +679,9 @@ footer {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
-		height: 64px;
+		height: 50px;
 		width: 100%;
-		margin: 16px 24px 16px auto;
+		margin: 16px 24px auto auto;
 	}
 
 	.logo-brandname {
@@ -726,14 +734,186 @@ footer {
 
 
 
-
 	/*Banner: Row to Column*/
 
+	.banner-container {
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin: auto;
+
+	}
+
+	.banner-container img {
+
+		width: 100%;
+		height: auto;
+		margin-top:0px;
+		margin-bottom: 32px;
+
+	}
+
+	.banner-info-container {
+
+		margin: auto;
+		width: 100%;
+	}
+
+	.banner-head {
+
+		font-size: 32px;
+		font-weight: bold;
+		margin-left: 16px;
+	}
+
+	.banner-p {
+
+		font-size: 15px;
+		text-decoration: none;
+		width: 20rem;
+		text-align: justify-all;
+		margin-left: 16px;
+	}
+
+	.btn-start {
+
+		font-size: 20px;
+		background-color: gray;
+		color: white;
+		margin: auto;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		width: 90%;
+		margin-bottom: 32px;
+
+	}
 
 
 
 
 	/*Introduction: Only the RIGHT container*/
+
+	.intro-container {
+
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+
+	}
+
+
+		/*Left Container*/
+
+
+	.intro-left-container {
+
+		display: none;
+
+	}
+
+
+	.intro-right-container {
+
+		width: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		border: none;
+		margin-left: 16px;
+		margin-right: 16px;
+		margin-top: 0px;
+		padding-top: 0px;
+	}
+
+	.orientation-box {
+
+		display: flex;
+		flex-direction: column;
+		height: auto;
+	}
+
+
+	.our-campus-box {
+
+		display: flex;
+		flex-direction: column;
+		height: auto;
+
+	}	
+
+	.guest-lecture-box {
+
+		display: flex;
+		flex-direction: column;
+		height: auto;
+	}
+
+	.orientation-box img {
+
+		width: 100%;
+		height: 12rem;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		margin: auto;
+
+	}
+
+	.orientation-date {
+
+		width: auto;
+	}
+
+	.our-campus-box img {
+
+		width: 100%;
+		height: 12rem;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		margin: auto;
+	}
+
+
+	.guest-lecture-box img {
+
+		width: 100%;
+		height: 12rem;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		margin: auto;
+	}
+
+
+	.orientation-box:hover,
+	.our-campus-box:hover,
+	.guest-lecture-box:hover {
+
+		background-color: gray;
+	}
+
+
+	.intro-title {
+
+		font-size: 25px;
+		color: #6d6868;
+	}
+
+	.intro-details {
+
+		font-size: 15px;
+	}
+
+
+	.orientation-date a, 
+	.our-campus-text a,
+	.guest-lecture-text a {
+
+		font-size: 15px;
+
+	}
+
 
 
 
@@ -742,18 +922,196 @@ footer {
 	/*Start Learning: Just Title for each section*/
 
 
+	#learning-list {
 
+		background-color: #ededed;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		padding: 32px 32px 32px 32px;
+	}
+
+	.learning-list-header {
+
+		display: flex;
+		justify-content: center;
+		padding-bottom: 16px;
+	}
+
+	.section-title {
+
+		font-size: 25px;
+		font-weight: bold;
+
+	}/*same for thesis exhibits title*/
+
+	.learning-list-container {
+
+		display: none;
+
+	}
+
+	.learning-list-icons {
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.software-engineer-ic {
+
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		padding-left:2rem;
+		padding-right:4rem;
+		background-color: #dbd9d9;
+		color: #4e5053;
+		font-size: 20px;
+		display: flex;
+		justify-content: flex-start;
+		margin-bottom: 0.5rem;
+	}
+
+	.software-engineer-ic span {
+
+		text-align: justify;
+
+	}
+
+
+	.computer-art-ic {
+
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		padding-left:4.3rem;
+		padding-right:5.3rem;
+		background-color: #dbd9d9;
+		color: #4e5053;
+		font-size: 20px;
+		display: flex;
+		justify-content: flex-start;
+		margin-bottom: 0.5rem;
+	}
+
+	.computer-art-ic span {
+
+		text-align: justify;
+
+	}
+
+
+	.design-ic {
+
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		padding-left:5.2rem;
+		padding-right:7.2rem;
+		background-color: #dbd9d9;
+		color: #4e5053;
+		font-size: 20px;
+		display: flex;
+		justify-content: flex-start;
+		margin-bottom: 0.5rem;
+	}
+
+	.design-ic span {
+
+		text-align: justify;
+
+	}
+
+
+	.data-ic {
+
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		padding-left:5.8rem;
+		padding-right:7.8rem;
+		background-color: #dbd9d9;
+		color: #4e5053;
+		font-size: 20px;
+		display: flex;
+		justify-content: flex-start;
+		margin-bottom: 0.5rem;
+	}
+
+	.data-ic span {
+
+		text-align: justify;
+
+	}
+
+
+
+	.business-ic {
+
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		padding-left:5rem;
+		padding-right:6.6rem;
+		background-color: #dbd9d9;
+		color: #4e5053;
+		font-size: 20px;
+		display: flex;
+		justify-content: flex-start;
+		margin-bottom: 0.5rem;
+	}
+
+	.business-ic span {
+
+		text-align: justify;
+
+	}
+
+
+
+	.marketing-ic {
+
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		padding-left:5rem;
+		padding-right:6rem;
+		background-color: #dbd9d9;
+		color: #4e5053;
+		font-size: 20px;
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	.marketing-ic span {
+
+		text-align: justify;
+
+	}
 
 
 	/*Thesis Exhibits: VIDEO ONLY*/
 
 
+	.exhibits-right-container {
 
+		display: none;
+	}
+
+	.exhibits-left-container {
+
+		margin-left: 25px;
+	}
+
+	.exhibits-left-text {
+
+		display: none;
+	}
 
 	/*footer: COPYRIGHT ONLY*/
 
 
+	.footer-terms {
 
+		display: none;
+	}
 
 
 
